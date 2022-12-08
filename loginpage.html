@@ -1,0 +1,111 @@
+<title>Login</title>
+<style>
+body{
+text-align: center;
+font-family: Arial;
+margin: 0;
+}
+
+.fundo{
+display: flex;
+opacity: 0.2;
+z-index: -1;
+position: fixed;
+height: 100%;
+width: 100%;
+margin: -200px;
+}
+
+.logo{
+padding-top: 100px;
+border-radius: 100px;
+width: 80px;
+}
+
+.login{
+border: 1px solid rgb(145, 145, 145);
+background-color: aliceblue;
+border-radius: 10px;
+width: 500px;
+height: 610px;
+margin: 200px auto;
+padding: 3px 0 10px;
+z-index: 1;
+background-image: linear-gradient(rgb(85, 85, 248),rgb(132, 2, 176) , rgb(207, 3, 207));
+}
+
+.usuario, .passw{
+padding-right: 125px;
+}
+
+.e-mail, .senha{
+width: 200px;
+height: 25px;
+margin: 0 auto 30px auto;
+border-radius: 3px;
+border: 1px solid gray;
+}
+
+.remember, .button{
+margin: 20px auto 40px auto;
+}
+
+.button{
+margin: 10px auto 20px auto;
+padding: 5px;
+height: 40px;
+width: 100px;
+border: 1px solid gray;
+border-radius: 20px;
+}
+
+.esquecido{
+text-decoration: none;
+color: white;
+}
+</style>
+
+Salvador
+<form action="">
+  <div class="login">
+    <img
+      class="logo"
+      src="https://images-ext-2.discordapp.net/external/AmE_ph38pr_Ej_-CVXLKKFwJqzEXBXg_8-5NkXBSJ8c/https/cdn.pixabay.com/photo/2016/03/31/15/33/contact-1293388_960_720.png?width=315&height=406"
+      alt=""
+    />
+    <h1>Login</h1>
+
+    <label class="usuario" for="e-mail" class="user">Username: </label>
+    <br />
+
+    <input
+      type="text"
+      class="e-mail"
+      placeholder="Insert your username"
+      required
+    />
+
+    <br />
+
+    <label for="senha" class="passw">Password: </label>
+    <br />
+
+    <input
+      type="password"
+      class="senha"
+      placeholder="Insert your password"
+      required
+    />
+
+    <br />
+
+    <input type="checkbox" class="remember" />
+    <label for="remember">Remember me </label>
+    <br />
+
+    <input type="button" value="Login" class="button" />
+    <br />
+
+    <a href="" class="esquecido">Forgot Password?</a>
+  </div>
+</form>
